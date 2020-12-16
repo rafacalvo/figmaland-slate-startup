@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylessheet -->
+  <link rel="stylesheet" href="/dist/css/style.css">
+  <title>Slate Startup</title>
+</head>
+<body>
+  <header class="header">
+    <!--  Dark overlay -->
+    <div class="overlay has-fade"></div>
+    <!-- Navbar -->
+    <nav class="nav container container--pall flex flex-jc-sb flex-ai-c">
+      <!-- Logo -->
+      <a href="/" class="header-logo">
+      <img src="/images/logo-dark.svg" alt="Figma Land logo"></a>
+
+      <!-- Menu links -->
+      <div class="header__links hide-for-mobile">
+        <a href="/">Home</a>
+        <a href="#">Product</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Menu Button -->
+      <a href="#" class="button secondary-button">
+        Login
+      </a>
+
+      <!-- Hamburger menu -->
+      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+        <img id="menuBtn" src="/images/icons/menu.svg" alt="Hamburger menu button">
+      </a>
+
+      <!-- Mobile menu -->
+
+      <div class="header__menu has-fade mobile-menu hide-for-desktop">
+        <div class="menu-area flex flex-fd-c flex-fds-c flex-jc-c flex-ai-c">
+          <a href="/">Home</a>
+          <a href="#">Product</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <!-- Here goes everything (except the footer) -->
+    <!-- Hero section -->
+    <section class="hero container container--pall flex flex-jc-sb flex-ai-c">
+      <div class="hero__main">
+        <h1>Work at the speed
+        of thought</h1>
+        <p>Most calendars are designed for teams. Slate is designed for
+        freelancers who want a simple way to plan their schedule.</p>
+        <div class="cta-buttons flex flex-ai-c flex-jc-c flex-fds-c">
+          <a href="#" class="button primary-button">Try for free</a>
+          <a href="#" class="button secondary-button">Learn more</a>
+        </div>
+        <div class="hero__img container--py">
+          <img src="/images/hero-img.png" alt="Hero image">
+        </div>
+      </div>
+    </section>
+    <!-- Features section -->
+    <section class="features container container--pall">
+      <h2>Features</h2>
+      <p>Most calendars are designed for teams. Slate is designed for
+      freelancers who want a simple way to plan their schedule.</p>
+      <div class="features__showcase flex flex-fd-c flex-fds-c">
+        <div class="features__showcase-img">
+          <img srcset="/images/features-mobile.png 756w,
+                      /images/features-desktop.png 785w"
+                sizes="(max-width: 768px) 756px,
+                        785px"
+          src="/images/features-desktop.png" alt="Features section image">
+        </div>
+        <div class="features__showcase-list">
+          <div class="truth">
+            <div class="list-title">
+              <img class="icon" src="/images/icons/cutlery.svg" alt="Cutlery icon">
+              <h5>A single source
+                of truth</h5>
+            </div>
+            <p>When you add work to your
+            Slate calendar we automatically
+            calculate useful insights.</p>
+          </div>
+          <div class="truth">
+            <div class="list-title">
+              <img class="icon" src="/images/icons/alien.svg" alt="Cutlery icon"><h5>Intuitive
+                interface</h5>
+            </div>
+            <p>When you add work to your
+            Slate calendar we automatically
+            calculate useful insights.</p>
+          </div>
+          <div class="interface">
+            <div class="list-title">
+              <img class="icon" src="/images/icons/infinity.svg" alt="Alien icon"><h5>Or with rules</h5>
+            </div>
+            <p>When you add work to your
+            Slate calendar we automatically
+            calculate useful insights.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content Section -->
+    <section class="content container container--pall">
+      <h2>Contents</h2>
+      <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+      <div class="content__grid">
+        <div class="work content__grid-card">
+          <h4>Work</h4>
+          <p>Ever wondered if you're too reliant
+          on a client for work? Slate helps
+          you identify .</p>
+          <a href="#" class="button primary-button">Sign Up</a>
+          <img class="macbook-img" src="/images/macbook.png" alt="Macbook image">
+        </div>
+        <div class="data content__grid-card">
+          <h4>Design with real data</h4>
+          <p>Ever wondered if you're too reliant
+            on a client for work? Slate helps
+            you identify .</p>
+          <a href="#" class="button primary-button">Try for free</a>
+          <img class="boards-img" src="/images/boards-notification.png" alt="Board notification image">
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="gallery container container--pall">
+      <h2>Gallery</h2>
+      <p>We focus on ergonomics and meeting you where you work.
+      It's only a keystroke away.</p>
+      <div class="gallery__grid">
+        <div class="row-1">
+          <img class="card single-card" src="/images/drone.png" alt="Drone picture">
+          <img class="card single-card" src="/images/ipad.png" alt="iPad by the pool picture">
+          <img class="card single-card" src="/images/coffee-meeting.png" alt="Coffee meeting picture">
+          <img class=" card single-card" src="/images/computer.png" alt="iMac picture">
+        </div>
+        <div class="row-2">
+          <img class="card wide-card code" src="/images/code.png" alt="Code in screen picture">
+          <img class="card single-card chromebook" src="/images/typing.png" alt="Typing in tablet picture">
+          <img class="card wide-card camera" src="/images/camera.png" alt="Canon camera picture">
+        </div>
+      </div>
+      <a href="#" class="button secondary-button">See more</a>
+    </section>
+    <!-- Partners section -->
+    <section class="partners container container--pall">
+      <h2>Partners</h2>
+      <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+      <div class="partners__grid">
+        <div class="row-1 flex flex-jc-sb">
+          <!-- Apple app store -->
+          <img class="apple partner-logo" src="/images/icons/apple-app-store.png" alt="Apple app store logo">
+          <!-- Apiary -->
+          <img class="apiary partner-logo" src="/images/icons/apiary.png" alt="Apiary logo">
+          <!-- Android -->
+          <img class="android partner-logo" src="/images/icons/android-logo.png" alt="Android logo">
+        </div>
+        <div class="row-2 flex flex-jc-sb">
+          <!-- Basecamp -->
+          <img class="basecamp partner-logo" src="/images/icons/basecamp-logo.png" alt="Basecamp logo">
+          <!-- Airbnb-->
+          <img class="airbnb partner-logo" src="/images/icons/airbnb-logo.png" alt="Airbnb logo">
+          <!-- IBM -->
+          <img class="ibm partner-logo" src="/images/icons/ibm-logo.png" alt="IBM logo">
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials container container--pall flex flex-jc-c">
+      <h2>Testimonials</h2>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="profile flex">
+            <img src="/images/wade.png" alt="Wade profile picture">
+            <div class="name">
+              <p>Wade Steward</p>
+              <p>Designer</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>Slate helps you see how many more days
+            you need to work to reach your financial
+            goal for the month and year. Slate helps
+            you see how many more days
+            you need to work to reach your financial
+            goal for the month and year.your financial
+            goal for the month and year.</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="profile flex">
+            <img src="/images/francisco.png" alt="Francisco profile picture">
+            <div class="name">
+              <p>Francisco Lane</p>
+              <p>Designer</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>Slate helps you see how many more days
+              you need to work to reach your financial
+              goal for the month and year. Slate helps
+              you see how many more days
+              you need to work to reach your financial
+              goal for the month and year.</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="profile flex">
+            <img src="/images/ralph.png" alt="Wade profile picture">
+            <div class="name">
+              <p>Ralph Fisher</p>
+              <p>Designer</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              Slate helps you see how many more days
+              you need to work to reach your financial
+              goal for the month and year. Slate helps
+              you see how many more days
+              you need to work to reach your financial
+              goal for the month and year.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="profile flex">
+            <img src="/images/jorge.png" alt="Wade profile picture">
+            <div class="name">
+              <p>Jorge Murphy</p>
+              <p>Desiner</p>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              Slate helps you see how many more days
+              you need to work to reach your financial
+              goal for the month and year. Slate helps
+              you see how many more days
+              you need to work to reach your financial
+              goal for the month and year.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Promo section -->
+    <section class="promo container container--pall">
+      <div class="promo__card flex flex-fds-c flex-jcs-c">
+        <div class="promo__card-cta flex flex-fds-c flex-jc-c">
+          <h2>OpenType features
+          and Variable fonts</h2>
+          <a href="#" class="button primary-button">Try for free</a>
+        </div>
+        <div class="promo__card-img">
+          <img src="/images/promo-img.png" alt="Promo section image">
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer container container--pall flex flex-jc-sb flex-fd-c flex-fds-c">
+      <div class="col-1">
+        <h5>Fingertipe</h5>
+        <ul class="footer-links">
+          <li>Home</li>
+          <li>Examples</li>
+          <li>Pricing</li>
+          <li>Updates</li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <h5>Resourses</h5>
+        <ul class="footer-links">
+          <li>Home</li>
+          <li>Examples</li>
+          <li>Pricing</li>
+          <li>Updates</li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h5>About</h5>
+        <ul class="footer-links">
+          <li>Home</li>
+          <li>Examples</li>
+          <li>Pricing</li>
+          <li>Updates</li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <div class="adress flex">
+          <img class="icon" src="/images/icons/map.svg" alt="Map pin icon">
+          <p>7480 Mockingbird Hill undefined</p>
+        </div>
+        <div class="phone flex">
+          <img class="icon" src="/images/icons/mobile.svg" alt="Mobile phone icon">
+          <p> (239) 555-0108</p>
+        </div>
+        <div class="social-icons flex">
+          <a href="#" class="icon"><img src="/images/icons/twitter.svg" alt="Twitter icon"></a>
+          <a href="#" class="icon"><img src="/images/icons/facebook.svg" alt="Facebook icon"></a>
+          <a href="#" class="icon"><img src="/images/icons/linkedin.svg" alt="Linkedin icon"></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JS -->
+  <script src="app/js/script.js"></script>
+</body>
+</html>

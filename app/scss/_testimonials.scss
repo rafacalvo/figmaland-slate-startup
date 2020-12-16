@@ -1,0 +1,47 @@
+.testimonials {
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  @include breakpoint-up(large) {
+    margin-bottom: 2.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 2rem;
+    }
+
+    .testimonial-card {
+      margin: 0;
+      border: 1px solid #dedede;
+      border-radius: 10px;
+      padding: 2.5rem;
+      text-align: left;
+
+      .profile {
+        margin-bottom: 1.5rem;
+      }
+
+      .name {
+        margin-left: 1rem;
+        font-weight: 500;
+      }
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,236 @@
+@import 'variables';
+@import 'mixins';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bgColor;
+  font-family: 'Rubik', sans-serif;
+  font-size: $font-main;
+  color: $white;
+  line-height: 1.875rem;
+  overflow-x: hidden;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  @include breakpoint-up(large) {
+    font-size: $font-xxlg;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5625rem;
+
+  @include breakpoint-up(large) {
+    font-size: $font-xlg;
+    margin-bottom: 2.25rem;
+  }
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1.5625rem;
+
+  @include breakpoint-up(large) {
+    font-size: $font-lg;
+    margin-bottom: 2.25rem;
+  }
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+  @include breakpoint-up(large) {
+    font-size: $font-med;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+// Spacing
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+  &--pall {
+    padding: 4.375rem 1.5rem;
+    // text-align: center;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--py {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--px {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  &--pt {
+    padding-top: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 6rem;
+    }
+  }
+
+  &--pr {
+    padding-right: 1.5rem;
+  }
+
+  &--pb {
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--pl {
+    padding-left: 1.5rem;
+  }
+}
+
+// Flexbox styles
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jcs-c {
+    @include breakpoint-down(small) {
+      justify-content: center;
+    }
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-jc-se {
+    justify-content: space-evenly;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-fc-c {
+    flex-direction: column;
+  }
+
+  &-fds-c {
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+  }
+}
+
+// Lists styling
+ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+// Buttons
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.5rem 2.3rem;
+  border: 1px solid $white;
+  cursor: pointer;
+  border: 0;
+  color: $white;
+  font-weight: 500;
+  transition: opacity 300ms ease-in-out;
+}
+
+.primary-button {
+  border: 2px solid $primary;
+  background-color: $primary;
+
+  @include breakpoint-down(small) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.secondary-button {
+  border: 2px solid $white;
+}
+
+// Visibility
+.hide-for-mobile {
+  // Hide for tablet & mobile devices
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  // Hide for desktop viewport widths
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

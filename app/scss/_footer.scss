@@ -1,0 +1,44 @@
+footer {
+  text-align: left;
+
+  ul {
+    margin: 2rem 0;
+  }
+
+  .col-4 {
+    @include breakpoint-up(medium) {
+      padding: 2rem;
+    }
+  }
+
+  .adress,
+  .phone {
+    line-height: 1;
+
+    img {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .adress {
+    img {
+      width: 30.67px;
+    }
+  }
+
+  .phone {
+    margin: 1rem 0;
+
+    img {
+      width: 20.42px;
+    }
+  }
+
+  .social-icons {
+    align-items: center;
+
+    a:nth-child(2) {
+      margin: 0 1.5rem;
+    }
+  }
+}

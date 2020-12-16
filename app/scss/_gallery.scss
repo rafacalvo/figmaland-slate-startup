@@ -1,0 +1,40 @@
+.gallery {
+  text-align: center;
+
+  img {
+    @include breakpoint-down(small) {
+      width: 100%;
+    }
+  }
+
+  .row-1,
+  .row-2 {
+    margin-bottom: 2rem;
+
+    .card {
+      border-radius: 0.75rem;
+    }
+  }
+
+  .row-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0 3rem;
+    }
+  }
+
+  .row-2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
